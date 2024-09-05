@@ -1,0 +1,6 @@
+runMode: compare-release-with-baseline
+projectFolders: [obs]
+baselineDir: pdf2imagef
+releaseDir: release-v2
+percyConfigs:
+  waitForTimeout: 5000

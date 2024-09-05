@@ -226,7 +226,7 @@ async function createPercySnapshotConfig (pdfDocsRunInfoMap) {
     },
     snapshots: [
       {
-        name: pdfDocsRunInfoMap.pdfFileName,
+        name: pdfDocsRunInfoMap.pdfFileName.replace(".pdf", ""),
         url: `${pdfViewerUrlPath}/${pdfDocsRunInfoMap.projectFolder}/${pdfDocsRunInfoMap.finalWorkingDir}/${pdfDocsRunInfoMap.pdfFileName}`,
         waitForSelector: percyWaitForSelectorCss,
         waitForTimeout: pdfDocsRunInfoMap.percyConfigs?.waitForTimeout,

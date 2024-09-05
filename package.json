@@ -7,7 +7,8 @@
         "stop-server": "npx forever stopall",
         "pretest": "(ver && npx extract-zip %cd%/pdfjs-3.4.120-dist.zip || extract-zip ./pdfjs-3.4.120-dist.zip)",
         "test": "node app/run.js",
-        "posttest": "npm run stop-server && exit 0"
+        "posttest": "npm run stop-server && exit 0",
+        "image-upload": "npx percy upload -v -e ./projects/obs/images"
     },
     "keywords": [
         "percy-pdf",

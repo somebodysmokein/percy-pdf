@@ -1,0 +1,5 @@
+runMode: create-baseline
+projectFolders: [obs]
+baselineDir: release-v2
+percyConfigs:
+  waitForTimeout: 5000
